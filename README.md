@@ -6,17 +6,18 @@ To get an understanding for the different parts of a robust trading system with 
 ## Outcome
 
 ## Ressources
-- Kalle Halden (https://www.youtube.com/watch?v=-MHhA-Y3DSk)
-- Algo101 (https://algotrading101.com/)
+- [Kalle Halden](https://www.youtube.com/watch?v=-MHhA-Y3DSk)
+- [AlgoTrading 101](https://algotrading101.com/)
 
 ## Main Parts
 # 1. Entries
   Enters if there was a quick pullback.
   ```
-  if high_3_bars_ago > high_2_bars_ago && low_3_bars_ago < low_2_bars_ago && lastClose > high_3_bars_ago
+  if high_2_bars_ago > high_1_bar_ago && low_2_bars_ago < low_1_bar_ago && lastClose > high_2_bars_ago
   ```
   That rules looks like this on a chart.
-  ![Entry Chart] (Entry.png)
+  
+  ![Entry](https://github.com/JoeG777/MT4_Forex_Trading_Bot_Template/blob/main/Entry.PNG)
  
 # 2. Sizing Algorithm
   > output=fractalOfAccountToRisk*AccountEquity/lotSize* tickValue * stopRangeInTicks*adjustForTicks);
@@ -27,4 +28,6 @@ To get an understanding for the different parts of a robust trading system with 
   - same applies to Take Profit
 
 ## Backtest Results
-![Backtest Results] (Screenshot_2020-12-28 Strategy Tester 32 Quick Pullback Pattern.png)
+![Backtest](https://github.com/JoeG777/MT4_Forex_Trading_Bot_Template/blob/main/Screenshot_2020-12-28%20Strategy%20Tester%2032%20Quick%20Pullback%20Pattern.png)
+
+### Thank you very much and have fun playing around
